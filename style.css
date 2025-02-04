@@ -1,0 +1,84 @@
+:root{
+    --clr-bcg : #fff; /* Default background color (light mode) */
+    --clr-font: #282c35; /* Default font color (light mode) */
+    --clr-primary:#d23669; /* Primary color for highlights (light mode) */
+    --clr-grey:#64748b; /* Grey color for secondary elements (light mode) */
+}
+
+.dark-theme{
+    --clr-bcg:#282c35; /* Background color for dark theme */
+    --clr-font:#fff; /* Font color for dark theme */
+    --clr-primary:#ffa7c4; /* Primary color for highlights in dark theme */
+    --clr-grey:#cbd5e1; /* Grey color for secondary elements in dark theme */
+}
+
+*{
+    margin: 0; /* Remove default margin from all elements */
+    padding: 0; /* Remove default padding from all elements */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height calculation */
+}
+
+body{
+    background-color: var(--clr-bcg); /* Set background color based on the current theme */
+    color: var(--clr-font); /* Set font color based on the current theme */
+    line-height: 1.5; /* Set line height for better readability */
+    font-size: 14px; /* Set default font size */
+    transition: 300ms all linear; /* Smooth transition for color changes */
+}
+
+.nav-center{
+    width: 90vw; /* Set width of the navigation */
+    max-width: 600px; /* Set max width for better control */
+    margin: 0 auto; /* Center align the navigation bar */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute items with space in between */
+    align-items: center; /* Vertically center the items */
+    padding: 32px 0px; /* Add padding for spacing */
+}
+
+.nav-center span{
+    font-size: 40px; /* Increase font size for the main title */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2.5px; /* Increase letter spacing */
+}
+
+.btn{
+    background-color: var(--clr-primary); /* Set the button background color */
+    color: var(--clr-bcg); /* Set button text color */
+    padding: 4px 8px; /* Set padding inside the button */
+    border-radius: 5px; /* Round the corners of the button */
+    border-color: transparent; /* Remove border */
+    text-transform: uppercase; /* Convert button text to uppercase */
+    transition: 300ms all; /* Smooth transition for button changes */
+    font-weight: bold; /* Make button text bold */
+    letter-spacing: 2px; /* Increase letter spacing */
+    cursor: pointer; /* Change cursor to pointer when hovering */
+}
+
+.articles{
+    padding: 80px 0px; /* Add padding to the articles section */
+    width: 90vw; /* Set the width of the articles section */
+    max-width: 600px; /* Set max width for the articles section */
+    margin: 0 auto; /* Center the articles section */
+}
+
+.post{
+    margin-bottom: 48px; /* Add space between individual posts */
+}
+
+.post h2{
+    color: var(--clr-primary); /* Set post title color */
+    text-transform: capitalize; /* Capitalize the post title */
+    letter-spacing: 2px; /* Increase letter spacing for titles */
+    font-size: 28px; /* Set the font size for the title */
+}
+
+.post-info{
+    font-style: italic; /* Italicize the post info */
+    margin-bottom: 12px; /* Add space below post info */
+    color: var(--clr-grey); /* Set color for the post info */
+}
+
+.post-info span{
+    margin-right: 8px; /* Add space between the spans inside post info */
+}
